@@ -12,8 +12,7 @@ namespace Kevin_Huang.Models
         public int ProductId { get; set; }
         public int CustomerId { get; set; }
         public int StoreId { get; set; }
-        [DataType(DataType.Date)]
-        public DateTime? DateSold { get; set; }
+        public string DateSold { get; set; }
 
         public Customer Customer { get; set; }
         public Product Product { get; set; }

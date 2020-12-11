@@ -106,6 +106,7 @@ namespace Kevin_Huang.Controllers
 
         // DELETE: api/Products/5
         [HttpDelete("{id}")]
+        [Route("Delete/{id}")]
         public async Task<ActionResult<Product>> DeleteProduct(int id)
         {
             var product = await _context.Products.FindAsync(id);
